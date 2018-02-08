@@ -4,7 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
-# {{ page.title }} #
+<h1>{{ page.title }}</h1>
 ## Posts ##
 <ul>
   {% for post in site.posts %}
