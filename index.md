@@ -4,11 +4,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 ---
 
-## Posts ##
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+{% include posts_list.html %}
+
+{% include repos_list.html %}
