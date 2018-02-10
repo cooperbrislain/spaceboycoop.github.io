@@ -1,5 +1,3 @@
-@import "{{ site.theme }}";
-
 .two-column {
     display: flex;
     flex-direction: row;
@@ -13,3 +11,5 @@
 .two-column #nav {
     width: 200px;
 }
+
+@import "{{ site.theme }}";
