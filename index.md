@@ -4,6 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 ---
 
+## Posts ##
 <ul>
   {% for post in site.posts %}
     <li>
