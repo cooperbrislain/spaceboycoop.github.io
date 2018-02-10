@@ -17,7 +17,7 @@
 <ul>
     {% for repository in site.github.public_repositories %}
         <li>
-            [{{ repository.name }}]({{ repository.html_url }})
+            <a href="{{ repository.url }}">{{ repository.name }}</a>
         </li>
     {% endfor %}
 </ul>
