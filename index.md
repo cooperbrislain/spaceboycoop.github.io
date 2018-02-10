@@ -12,3 +12,12 @@
     </li>
   {% endfor %}
 </ul>
+
+## Repos ##
+<ul>
+    {% for repository in site.github.public_repositories %}
+        <li>
+            [{{ repository.name }}]({{ repository.html_url }})
+        </li>
+    {% endfor %}
+</ul>
