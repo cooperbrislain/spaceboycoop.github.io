@@ -4,3 +4,4 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 ---
 
+{% include posts_frontpage.html %}
