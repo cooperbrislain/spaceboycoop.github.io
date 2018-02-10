@@ -4,6 +4,3 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 ---
 
-{% include posts_list.html %}
-
-{% include repos_list.html %}
