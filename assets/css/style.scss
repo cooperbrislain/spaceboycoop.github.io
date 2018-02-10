@@ -1,16 +1,13 @@
 @import "{{ site.theme }}";
 
-.two-column {
+div.two-column {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    nav {
+        width: 200px;
+    }
+    main {
+        flex-grow: 1;
+    }
 }
-
-.two-column #content {
-    flex-grow: 1;
-}
-
-.two-column #nav {
-    width: 200px;
-}
-
