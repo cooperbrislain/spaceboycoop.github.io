@@ -1,8 +1,8 @@
 <h3>Repos</h3>
 <ul>
-    {% for repo in site.github.public_repositories %}
+    {% for repository in site.github.public_repositories %}
         <li>
-            <a href="{{ repo.repository_url }}">{{ repository.name }}</a>
+            <a href="{{ repository.html_url }}">{{ repository.name }}</a>
         </li>
     {% endfor %}
 </ul>
