@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+{% include head.html %}
   </head>
   <body>
       <div id="header">
@@ -40,13 +40,16 @@
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
-        <div class="two-column">
+        <div class="three-column">
             <nav>
                 {% include sidebar_nav.html %}
             </nav>
             <main>
                 {{ content }}
             </main>
+            <aside>
+                {% include right.html %}
+            </aside>
         </div>
       </section>
 

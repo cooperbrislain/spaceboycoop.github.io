@@ -1,0 +1,42 @@
+<ul class="social">
+    {% if site.twitter_username %}
+        {% capture social_url %}twitter.com/{{ site.twitter_username }}{% endcapture %}
+        {% include social_item.html title="Twitter" url=social_url icon="twitter" %}
+    {% endif %}
+    {% if site.github_username %}
+        {% capture social_url %}github.com/{{ site.github_username }}{% endcapture %}
+        {% include social_item.html title="Github" url=social_url icon="github" %}
+    {% endif %}
+    {% if site.linkedin_username %}
+        {% capture social_url %}linkedin.com/in/{{ site.linkedin_username }}{% endcapture %}
+        {% include social_item.html title="LinkedIn" url=social_url icon="linkedin" %}
+    {% endif %}
+    {% if site.instagram_username %}
+        {% capture social_url %}www.instagram.com/{{ site.instagram_username }}{% endcapture %}
+        {% include social_item.html title="Instagram" url=social_url icon="instagram" %}
+    {% endif %}
+    {% if site.google_plus_username %}
+        {% capture social_url %}plus.google.com/{{ site.google_plus_username }}{% endcapture %}
+        {% include social_item.html title="Google+" url=social_url icon="google-plus" %}
+    {% endif %}
+    {% if site.facebook_username %}
+        {% capture social_url %}www.facebook.com/{{ site.facebook_username}}{% endcapture %}
+        {% include social_item.html title="Facebook" url=social_url icon="facebook" %}
+    {% endif %}
+    {% if site.dribbble_username %}
+        {% capture social_url %}dribble.com/{{ site.dribble_username }}{% endcapture %}
+        {% include social_item.html title="Dribbble" url=social_url icon="dribbble" %}
+    {% endif %}
+    {% if site.behance_username %}
+        {% capture social_url %}www.behance.net/{{ site.flickr_username }}{% endcapture %}
+        {% include social_item.html title="Behance" url=social_url icon="behance" %}
+    {% endif %}
+    {% if site.flickr_username %}
+        {% capture social_url %}www.flickr.com/photos/{{ site.flickr_username }}{% endcapture %}
+        {% include social_item.html title="Flickr" url=social_url icon="flickr" %}
+    {% endif %}
+    {% if site.tumblr_username %}
+        {% capture social_url %}{{ site.tumblr_username }}.tumblr.com{% endcapture %}
+        {% include social_item.html title="Tumblr" url=social_url icon="Tumblr" %}
+    {% endif %}
+</ul>
