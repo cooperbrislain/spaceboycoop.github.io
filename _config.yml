@@ -20,7 +20,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://spaceboycoop.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: spaceboycoop
-github_username:  spaceboycoop
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-midnight
@@ -42,3 +41,4 @@ plugins:
 #   - vendor/ruby/
 google_analytics: UA-113938236-1
 github: [metadata]
+github_username:  spaceboycoop
