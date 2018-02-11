@@ -2,7 +2,7 @@
     {% for post in site.posts %}
         <article>
             <h3>{{ post.title }}</h3>
-            <time>{{ page.date }}</time>
+            <time>{{ post.date }}</time>
             <summary>{{ post.excerpt }}</summary>
         </article>
     {% endfor %}
