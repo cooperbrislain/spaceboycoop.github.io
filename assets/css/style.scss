@@ -8,6 +8,8 @@ div.two-column {
     align-items: flex-start;
     nav {
         width: 200px;
+        background-color:  #353535;
+        border-right: 4px solid #434343;
     }
     main {
         flex-grow: 1;
