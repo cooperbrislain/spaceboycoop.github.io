@@ -1,9 +1,7 @@
-<ul>
-    {% for post in site.posts %}
-        <article>
-            <h3>{{ post.title }}</h3>
-            <time>{{ post.date }}</time>
-            <summary>{{ post.excerpt }}</summary>
-        </article>
-    {% endfor %}
-</ul>
+{% for post in site.posts %}
+    <article>
+        <h3>{{ post.title }}</h3>
+        <time>{{ post.date }}</time>
+        <summary>{{ post.excerpt }}</summary>
+    </article>
+{% endfor %}
