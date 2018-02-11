@@ -21,7 +21,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://spaceboycoop.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: spaceboycoop
 github_username:  spaceboycoop
-github: [metadata]
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-midnight
@@ -42,3 +41,4 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 google_analytics: UA-113938236-1
+github: [metadata]
