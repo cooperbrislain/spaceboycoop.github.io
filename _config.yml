@@ -19,15 +19,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   Real-Time Visuals, IOT for VanLife, Flashy Lights and other Mad Scientist Shit
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://spaceboycoop.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+github_username: spaceboycoop
 twitter_username: spaceboycoop
-github_username:  spaceboycoop
-behance_username: cbrislain
-linkedin_username: cooperbrislain
-google_plus_username: +cooperbrislain
-instagram_username: spaceboycoop
-flickr_username: spaceboycoop
-tumblr_username: spaceboycoop
-# Build settings
+# Build setdtings
 markdown: kramdown
 theme: jekyll-theme-midnight
 plugins:

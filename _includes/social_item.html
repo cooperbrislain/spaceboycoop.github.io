@@ -1,5 +1,5 @@
 <li>
-    <a href="https://{{ include.url }}{{ include.username }}">
-        <i class="fa fa-{{ include.icon }}"></i> <span>{{ include.title }}</span>
+    <a href="https://{{ include.site_data.url | replace: '_username_', include.site_data.username  }}">
+        <i class="fa fa-{{ include.site_data.icon }}"></i> <span>{{ include.site_data.title }}</span>
     </a>
 </li>
