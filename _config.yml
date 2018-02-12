@@ -16,10 +16,9 @@
 title: Coop's Code
 email: cbrislain@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Real-Time Visuals, IOT for VanLife, Flashy Lights and other Mad Scientist Shit
+  Real-Time Visuals, IOT for VanLife, Flashy Lights and other Mad Science
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://spaceboycoop.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-
 github_username: spaceboycoop
 twitter_username: spaceboycoop
 # Build setdtings
