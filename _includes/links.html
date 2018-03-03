@@ -1,6 +1,6 @@
 <h3>Links</h3>
 <ul>
-    {% for link in site.data.links %}
+    {% for link in include.links %}
         <li>
             <a href="{{ link.url }}">{{ link.name }}</a>
         </li>
