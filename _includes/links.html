@@ -1,8 +1,8 @@
 <h3>Links</h3>
 <ul>
-    {% for link in include.links %}
+    {% for the_link in include.links %}
         <li>
-            <a href="{{ link.url }}">{{ link.name }}</a>
+            <a href="{{ the_link.url }}">{{ the_link.name }}</a>
         </li>
     {% endfor %}
 </ul>
