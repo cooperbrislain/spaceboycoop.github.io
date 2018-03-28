@@ -1,3 +1,4 @@
+---
 layout: post
 title:  "Failure provides the opportunity to begin again, more intelligently."
 quote-by: "Henry Ford"
