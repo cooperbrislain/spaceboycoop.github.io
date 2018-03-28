@@ -14,6 +14,7 @@
         <div id="header">
             <nav>
                 <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
+                {% include social.html socials=site.data.social %}
                 {% if site.show_downloads %}
                     <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
                     <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
@@ -30,16 +31,13 @@
                     <hr>
                 </div>
             </section>
-            <div class="three-column">
+            <div class="two-column">
                 <nav>
                     {% include sidebar_nav.html %}
                 </nav>
                 <main>
                     {{ content }}
                 </main>
-                <aside>
-                    {% include right.html %}
-                </aside>
             </div>
         </div>
         {% if site.google_analytics %}

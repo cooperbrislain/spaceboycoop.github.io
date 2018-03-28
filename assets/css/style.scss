@@ -18,6 +18,39 @@ $secondary-color-bright: #ffcc00;
     box-sizing: border-box;
 }
 
+body {
+    >#header {
+        nav {
+            background: none;
+            ul.social {
+                margin: 0px;
+
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                padding-top: 1px;
+                li {
+                    list-style-image: none;
+                    list-style-type: none;
+                    margin-right: 5px;
+                    a {
+                        padding: 8px;
+                        width: 36px;
+                        height: 36px;
+                        i {
+                            font-size: 20px;
+                        }
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 .wrapper {
     max-width: 800px;
 }
@@ -86,7 +119,6 @@ div.two-column, div.three-column {
     aside {
         width: 150px;
         padding: 3px;
-        border-left: 4px solid $primary-color-dark;
         ul {
             padding-left: 0px;
         }
@@ -181,24 +213,4 @@ menu, ol, ul {
 }
 p, ul, ol, table, pre, dl {
     margin: 0 20px;
-}
-ul.social {
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    li {
-        list-style-image: none;
-        list-style-type: none;
-        padding: 3px;
-        a {
-            i {
-                font-size: 20px;
-            }
-            span {
-                display: none;
-            }
-        }
-    }
 }
