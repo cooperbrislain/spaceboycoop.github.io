@@ -1,6 +1,8 @@
 ---
 ---
 
+// colors: primary, secondary, tertiary
+// variants: bright, dark, light, accent
 $background-color: #252525;
 $primary-color: #d5c9b3;
 $primary-color-bright: #f0e7d5;
@@ -45,10 +47,10 @@ div.two-column, div.three-column {
     align-items: flex-start;
     nav {
         width: 200px;
-        border-right: 4px solid #636363;
+        border-right: 4px solid $primary-color-dark;
         h4 {
-            background-color: #636363;
-            color: #252525;
+            background-color: $primary-color-dark;
+            color: $background-color;
             font-weight: bold;
             font-size: 28px;
             line-height: 18px;
@@ -60,6 +62,7 @@ div.two-column, div.three-column {
         ul {
             margin: 0px;
             padding-left: 0px;
+            margin-bottom: 10px;
             li {
                 margin-left: 2em;
                 text-indent: -1em;
@@ -83,7 +86,7 @@ div.two-column, div.three-column {
     aside {
         width: 150px;
         padding: 3px;
-        border-left: 4px solid #434343;
+        border-left: 4px solid $primary-color-dark;
         ul {
             padding-left: 0px;
         }
@@ -98,7 +101,7 @@ article {
         margin: 15px;
         margin-left: 3em;
         text-indent: -2em;
-        color: #ffcc00;
+        color: $primary-color-bright;
         font-size: 20pt;
         font-family: Georgia;
         &.quote {
@@ -108,14 +111,14 @@ article {
     h3 {
         font-family: Georgia;
         margin-bottom: 0px;
-        border-bottom: 1px solid #444;
+        border-bottom: 1px solid $primary-color-dark;
         text-align: right;
         font-style: italic;
         position: relative;
         top: -30px;
         font-size: 16pt;
         margin-right: 3em;
-        color: #a097c5;
+        color: $primary-color;
         font-weight: bold;
         span {
             color: #777;
