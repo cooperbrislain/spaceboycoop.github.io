@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Failure provides the opportunity to begin again, more intelligently."
+title:  "In which my laptop takes a swim"
+quote: "Failure provides the opportunity to begin again, more intelligently."
 quote-by: "Henry Ford"
 date:   2018-03-27
 categories: 

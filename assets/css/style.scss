@@ -56,7 +56,7 @@ div.two-column, div.three-column {
             line-height: 18px;
             padding-left: 4px;
             text-transform: uppercase;
-            font-family: arial black;
+            font-family: "Arial Black";
 
         }
         ul {
@@ -96,38 +96,33 @@ article {
     img {
         max-width: 100%;
     }
-    h2 {
-        font-weight: normal;
-        margin: 15px;
-        margin-left: 3em;
-        text-indent: -2em;
-        color: $primary-color-bright;
-        font-size: 20pt;
-        font-family: Georgia;
-        &.quote {
-            font-style: italic;
-        }
-    }
-    h3 {
-        font-family: Georgia;
-        margin-bottom: 0px;
-        border-bottom: 1px solid $primary-color-dark;
-        text-align: right;
-        font-style: italic;
-        position: relative;
-        top: -30px;
-        font-size: 16pt;
-        margin-right: 3em;
-        color: $primary-color;
-        font-weight: bold;
-        span {
-            color: #777;
-        }
-    }
     p {
         margin-bottom: 2em;
     }
     header {
+        background-color: $primary-color-dark;
+        border: 0;
+        h2 {
+            font-weight: normal;
+            margin: 15px;
+            margin-left: 3em;
+            text-indent: -2em;
+            color: $primary-color-bright;
+            font-size: 20pt;
+            font-family: "Arial Black";
+        }
+        h3 {
+            font-family: "Arial Black";
+            margin-bottom: 0px;
+            border-bottom: 1px solid $primary-color-dark;
+            padding-left: 15px;
+            font-weight: bold;
+            position: relative;
+            top: -30px;
+            font-size: 16pt;
+            margin-right: 3em;
+            color: $primary-color;
+        }
         time {
             background-color: $secondary-color;
             color: $background-color;
@@ -148,6 +143,37 @@ article {
                 font-size: 13px;
             }
         }
+        a {
+            color: $secondary-color-bright;
+        }
+    }
+    div.quote {
+        float: right;
+        margin: 5px;
+        font-size: 18px;
+        font-style: italic;
+        font-color: $primary-color-dark;
+        width: 60%;
+        span {
+            &.quote {
+                color: $primary-color-dark;
+                &:before {
+                }
+                &:after {
+                }
+            }
+            &.quote-by {
+                color: $primary-color;
+                text-align: right;
+                display: block;
+                &:before {
+                    content: "~"
+                }
+            }
+        }
+    }
+    summary {
+        padding-top: 10px;
     }
 }
 menu, ol, ul {
