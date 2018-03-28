@@ -1,5 +1,15 @@
 ---
 ---
+
+$background-color: #252525;
+$primary-color: #d5c9b3;
+$primary-color-bright: #f0e7d5;
+$primary-color-dark: #636363;
+$secondary-color: #ffcc00;
+$secondary-color-bright: #ffcc00;
+//$tertiary-color:
+//$accent-color:
+
 @import "{{ site.theme }}";
 
 * {
@@ -13,8 +23,7 @@ section {
     max-width: 800px;
     #title {
         font-weight: bold;
-
-        color: #66d9ef;
+        color: $secondary-color;
         p {
             margin-bottom: 0;
             font-size: 14px;
@@ -22,7 +31,7 @@ section {
         h1 {
             font-family: Courier New;
             a {
-                color: #66d9ef;
+                color: $secondary-color;
             }
         }
         margin-bottom: 0;
@@ -37,12 +46,24 @@ div.two-column, div.three-column {
     nav {
         width: 200px;
         border-right: 4px solid #636363;
-        h3 {
+        h4 {
             background-color: #636363;
             color: #252525;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 18px;
+            padding-left: 4px;
+            text-transform: uppercase;
+            font-family: arial black;
+
         }
         ul {
+            margin: 0px;
             padding-left: 0px;
+            li {
+                margin-left: 2em;
+                text-indent: -1em;
+            }
         }
     }
     main {
@@ -100,11 +121,30 @@ article {
             color: #777;
         }
     }
-    time {
-        font-size: 9pt;
-    }
     p {
         margin-bottom: 2em;
+    }
+    header {
+        time {
+            background-color: $secondary-color;
+            color: $background-color;
+            font-weight: normal;
+            float: right;
+            display: block;
+            line-height: 13px;
+            font-family: PT Mono;
+            text-transform: uppercase;
+            span.day {
+                font-size: 26px;
+                line-height: 20px;
+            }
+            span.month {
+                font-size: 18px;
+            }
+            span.year {
+                font-size: 13px;
+            }
+        }
     }
 }
 menu, ol, ul {

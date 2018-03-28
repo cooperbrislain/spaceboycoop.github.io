@@ -2,7 +2,7 @@
 layout: post
 title:  "Failure provides the opportunity to begin again, more intelligently."
 quote-by: "Henry Ford"
-date:   2018-02-08 10:05:32 -0800
+date:   2018-03-27
 categories: 
 ---
 

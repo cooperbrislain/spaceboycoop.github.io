@@ -2,9 +2,15 @@
     {% for post in site.posts %}
         <li>
             <article>
-                <h3>{{ post.title }}</h3>
-                <time>{{ post.date }}</time>
-                <summary>{{ post.excerpt }}</summary>
+                <header>
+                    <time>
+                        <span class="day">{{ post.date | date: "%d" }}</span><br>
+                        <span class="month">{{ post.date | date: "%b" }}</span><br>
+                        <span class="year">{{ post.date | date: "%Y" }}</span><br>
+                    </time>
+                    <h3><a href="{{ post.url }}">{{ post.title }} ~ {{ post.quote-by }}</a></h3>
+                    <summary>{{ post.excerpt }}</summary>
+                </header>
             </article>
         </li>
     {% endfor %}
