@@ -11,6 +11,24 @@
 }
 section {
     max-width: 800px;
+    #title {
+        font-weight: bold;
+
+        color: #66d9ef;
+        p {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+        h1 {
+            font-family: Courier New;
+            a {
+                color: #66d9ef;
+            }
+        }
+        margin-bottom: 0;
+    }
+    margin-bottom: 5px;
+    padding-bottom: 0px;
 }
 div.two-column, div.three-column {
     display: flex;
@@ -30,7 +48,7 @@ div.two-column, div.three-column {
     }
     aside {
         width: 150px;
-        padding: 3px;  
+        padding: 3px;
         border-left: 4px solid #434343;
         ul {
             padding-left: 0px;
@@ -38,18 +56,39 @@ div.two-column, div.three-column {
     }
 }
 article {
+    h2 {
+        font-weight: normal;
+        margin: 15px;
+        margin-left: 3em;
+        text-indent: -2em;
+        color: #ffcc00;
+        font-size: 20pt;
+        font-family: Georgia;
+        &.quote {
+            font-style: italic;
+        }
+    }
     h3 {
-        font-weight: bold;
+        font-family: Georgia;
         margin-bottom: 0px;
         border-bottom: 1px solid #444;
+        text-align: right;
+        font-style: italic;
+        position: relative;
+        top: -30px;
+        font-size: 16pt;
+        margin-right: 3em;
+        color: #a097c5;
+        font-weight: bold;
+        span {
+            color: #777;
+        }
     }
     time {
         font-size: 9pt;
     }
-}
-#title {
     p {
-        margin-bottom: 3px;
+        margin-bottom: 2em;
     }
 }
 menu, ol, ul {

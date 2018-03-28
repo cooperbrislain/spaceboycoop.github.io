@@ -11,7 +11,6 @@ This last year my life has been a practice in transforming struggles into learni
 This time, I've decided to document my whole onboarding process as a series of scripts and configuration files that live in a git repo and my Documents folder, which in turn lives in the iCloud. My hope is that I won't need it to recover from any more catastrophic system failures, but it could come in handy next time I get a shiny new system and need to set it up; perhaps at my next job. At the very least, it could serve useful to someone else and a practice in documenting and establishing a baseline for my environment from which to iterate. 
 
 Without further ado, a link to the repo:
-
-[MacOS X Onboarder](https://github.com/spaceboycoop/onboarder)
+    [MacOS X Onboarder](https://github.com/spaceboycoop/onboarder)
 
 
