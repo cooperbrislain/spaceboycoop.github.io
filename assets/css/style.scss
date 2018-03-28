@@ -56,6 +56,9 @@ div.two-column, div.three-column {
     }
 }
 article {
+    img {
+        max-width: 100%;
+    }
     h2 {
         font-weight: normal;
         margin: 15px;
