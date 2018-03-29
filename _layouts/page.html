@@ -35,7 +35,10 @@
                     {% include sidebar_nav.html %}
                 </nav>
                 <main>
-                    {{ content }}
+                    <article>
+                        <h2>{{ page.title }}</h2>
+                        {{ content }}
+                    </article>
                 </main>
             </div>
         </div>
