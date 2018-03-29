@@ -9,7 +9,7 @@ $primary-color-bright: #c600ff;
 $primary-color-dark: #6200b6;
 $secondary-color: #056af3;
 $secondary-color-bright: #09e6e9;
-$tertiary-color: #ffcc00;
+$tertiary-color: #f39b02;
 $tertiary-color-bright: #ffcc00;
 $accent-color: #d5c9b3;
 $accent-color-bright: #f0e7d5;
@@ -67,6 +67,8 @@ section {
         p {
             margin-bottom: 0;
             font-size: 14px;
+            font-family: "Ubuntu Mono";
+            color: $tertiary-color;
         }
         h1 {
             font-family: "Press Start 2P";
