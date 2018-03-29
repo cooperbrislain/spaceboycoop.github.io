@@ -12,7 +12,7 @@ $secondary-color-bright: #66CCFF;
 $tertiary-color: #F36F00;
 $tertiary-color-bright: #FD8508;
 $accent-color: #B3B3B3;
-$accent-color-bright: #E6E6E6;
+$accent-color-bright: #e8e8e8;
 $accent-color-dark: #636363;
 
 @import "{{ site.theme }}";
@@ -103,10 +103,30 @@ div.two-column, div.three-column {
             margin-bottom: 10px;
             margin-right: 5px;
             li {
-                margin-left: 2em;
-                text-indent: -1em;
                 font-family: "Ubuntu Mono";
                 color: $accent-color;
+                line-height: 15px;
+                a {
+                    margin-left: 5px;
+                    text-indent: -1em;
+                }
+                time {
+                    background-color: $secondary-color-bright;
+                    color: $background-color;
+                    float: left;
+                    margin-right: 5px;
+                    .day {
+                        font-size: 24px;
+                    }
+                    .month {
+                        font-size: 15px;
+                        padding-left: 1px;
+                    }
+                    .year {
+                        display: none;
+                    }
+                }
+                clear: both;
             }
         }
     }
@@ -123,12 +143,15 @@ div.two-column, div.three-column {
                 }
             }
         }
-    }
-    aside {
-        width: 150px;
-        padding: 3px;
-        ul {
-            padding-left: 0px;
+        >article {
+            h2 {
+                text-align: center;
+                font-family: VT323;
+                margin-left: 20px;
+                margin-right: 20px;
+                color: $background-color;
+                background-color: $accent-color-bright;
+            }
         }
     }
 }
@@ -138,6 +161,7 @@ article {
     }
     p {
         margin-bottom: 2em;
+        color: #e8e8e8;
     }
     header {
         background-color: $primary-color-dark;
@@ -170,8 +194,6 @@ article {
             float: right;
             display: block;
             line-height: 13px;
-            font-family: "Ubuntu Mono";
-            text-transform: uppercase;
             span.day {
                 font-size: 36px;
                 line-height: 24px;
@@ -198,6 +220,9 @@ article {
         span {
             &.quote {
                 color: $secondary-color-bright;
+                display: block;
+                margin-left: 25px;
+                text-indent: -15px;
                 &:before {
                 }
                 &:after {
@@ -207,6 +232,8 @@ article {
                 color: $accent-color;
                 text-align: right;
                 display: block;
+                margin-top: -25px;
+                margin-right: 10px;
                 &:before {
                     content: "~";
                     color: $accent-color-dark;
@@ -216,6 +243,7 @@ article {
     }
     summary {
         padding-top: 10px;
+        margin-right: 20px;
         color: $accent-color-bright;
         p:last-child {
             margin-bottom: 0px;
@@ -228,6 +256,22 @@ article {
         margin-bottom: 20px;
         font-weight: bold;
         text-align: center;
+    }
+}
+time {
+    font-family: "VT323";
+    text-transform: uppercase;
+    display: block;
+    line-height: 13px;
+    span.day {
+        font-size: 36px;
+        line-height: 24px;
+    }
+    span.month {
+        font-size: 24px;
+    }
+    span.year {
+        font-size: 18px;
     }
 }
 menu, ol, ul {

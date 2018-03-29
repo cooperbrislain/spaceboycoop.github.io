@@ -2,7 +2,7 @@
 <ul>
     {% for post in site.posts %}
     <li>
-        <time>{{ post.date | date_to_string }}</time><br/>
+        {% include time_block.html date=post.date %}
         <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
