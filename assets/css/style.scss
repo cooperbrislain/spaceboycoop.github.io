@@ -4,13 +4,16 @@
 // colors: primary, secondary, tertiary
 // variants: bright, dark, light, accent
 $background-color: #252525;
-$primary-color: #d5c9b3;
-$primary-color-bright: #f0e7d5;
-$primary-color-dark: #636363;
-$secondary-color: #ffcc00;
-$secondary-color-bright: #ffcc00;
-//$tertiary-color:
-//$accent-color:
+$primary-color: #7d09e9;
+$primary-color-bright: #c600ff;
+$primary-color-dark: #6200b6;
+$secondary-color: #056af3;
+$secondary-color-bright: #09e6e9;
+$tertiary-color: #ffcc00;
+$tertiary-color-bright: #ffcc00;
+$accent-color: #d5c9b3;
+$accent-color-bright: #f0e7d5;
+$accent-color-dark: #636363;
 
 @import "{{ site.theme }}";
 
@@ -19,6 +22,7 @@ $secondary-color-bright: #ffcc00;
 }
 
 body {
+    font-family: "Ubuntu";
     >#header {
         nav {
             background: none;
@@ -51,6 +55,7 @@ body {
         }
     }
 }
+
 .wrapper {
     max-width: 800px;
 }
@@ -58,15 +63,15 @@ section {
     max-width: 800px;
     #title {
         font-weight: bold;
-        color: $secondary-color;
+        color: $secondary-color-bright;
         p {
             margin-bottom: 0;
             font-size: 14px;
         }
         h1 {
-            font-family: Courier New;
+            font-family: "Press Start 2P";
             a {
-                color: $secondary-color;
+                color: $secondary-color-bright;
             }
         }
         margin-bottom: 0;
@@ -80,17 +85,16 @@ div.two-column, div.three-column {
     align-items: flex-start;
     nav {
         width: 200px;
-        border-right: 4px solid $primary-color-dark;
+        border-right: 4px solid $primary-color;
         h4 {
-            background-color: $primary-color-dark;
+            background-color: $primary-color;
             color: $background-color;
             font-weight: bold;
             font-size: 28px;
             line-height: 18px;
             padding-left: 4px;
             text-transform: uppercase;
-            font-family: "Arial Black";
-
+            font-family: "Ubuntu Mono";
         }
         ul {
             margin: 0px;
@@ -99,6 +103,7 @@ div.two-column, div.three-column {
             li {
                 margin-left: 2em;
                 text-indent: -1em;
+                font-family: "Ubuntu Mono";
             }
         }
     }
@@ -141,10 +146,10 @@ article {
             text-indent: -2em;
             color: $primary-color-bright;
             font-size: 20pt;
-            font-family: "Arial Black";
+            font-family: "Ubuntu Mono" !important;
         }
         h3 {
-            font-family: "Arial Black";
+            font-family: "Ubuntu Mono" !important;;
             margin-bottom: 0px;
             border-bottom: 1px solid $primary-color-dark;
             padding-left: 15px;
@@ -162,7 +167,7 @@ article {
             float: right;
             display: block;
             line-height: 13px;
-            font-family: PT Mono;
+            font-family: "Ubuntu Mono";
             text-transform: uppercase;
             span.day {
                 font-size: 26px;
@@ -184,11 +189,12 @@ article {
         margin: 5px;
         font-size: 18px;
         font-style: italic;
-        font-color: $primary-color-dark;
+        font-color: $primary-color-bright;
+        font-family: "Ubuntu Condensed";
         width: 60%;
         span {
             &.quote {
-                color: $primary-color-dark;
+                color: $primary-color-bright;
                 &:before {
                 }
                 &:after {
@@ -206,10 +212,15 @@ article {
     }
     summary {
         padding-top: 10px;
+        p:last-child {
+            margin-bottom: 0px;
+        }
     }
     div.readmore {
         width: 100%;
-        font-size: 24px;
+        font-size: 50px;
+        line-height: 30px;
+        margin-bottom: 20px;
         font-weight: bold;
         text-align: center;
     }
