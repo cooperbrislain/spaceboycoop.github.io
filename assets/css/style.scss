@@ -7,12 +7,12 @@ $background-color: #252525;
 $primary-color: #7d09e9;
 $primary-color-bright: #c600ff;
 $primary-color-dark: #6200b6;
-$secondary-color: #056af3;
+$secondary-color: #056AF3;
 $secondary-color-bright: #09e6e9;
-$tertiary-color: #f39b02;
-$tertiary-color-bright: #ffcc00;
-$accent-color: #d5c9b3;
-$accent-color-bright: #f0e7d5;
+$tertiary-color: #F36F00;
+$tertiary-color-bright: #FD8508;
+$accent-color: #B3B3B3;
+$accent-color-bright: #E6E6E6;
 $accent-color-dark: #636363;
 
 @import "{{ site.theme }}";
