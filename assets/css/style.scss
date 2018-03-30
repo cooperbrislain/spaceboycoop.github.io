@@ -107,23 +107,28 @@ div.two-column, div.three-column {
                 color: $accent-color;
                 line-height: 15px;
                 a {
-                    margin-left: 5px;
-                    text-indent: -1em;
                 }
                 time {
                     background-color: $secondary-color-bright;
                     color: $background-color;
                     float: left;
+                    padding-: 1px;
+                    margin-top: 2px;
                     margin-right: 5px;
                     .day {
+                        line-height: 16px;
                         font-size: 24px;
                     }
                     .month {
+                        line-height: 12px;
                         font-size: 15px;
                         padding-left: 1px;
                     }
                     .year {
                         display: none;
+                        +br {
+                            display: none;
+                        }
                     }
                 }
                 clear: both;
