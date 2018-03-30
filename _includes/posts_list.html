@@ -3,7 +3,11 @@
     {% for post in site.posts %}
     <li>
         {% include time_block.html date=post.date %}
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        {% if post.short_title %}
+            <a href="{{ post.url }}">{{ post.short_title }}</a>
+        {% else %}
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        {% endif %}
     </li>
     {% endfor %}
 </ul>

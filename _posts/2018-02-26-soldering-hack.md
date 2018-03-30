@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "How to solder better joints for lead wires"
+title: "Soldering Hack: Staggering Splices"
+short_title: "Soldering Hack"
 date:   2018-02-08 10:05:32 -0800
 categories: new site welcome
 ---
