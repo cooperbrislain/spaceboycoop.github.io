@@ -22,6 +22,11 @@ $accent-color-dark: #636363;
 }
 
 body {
+    a {
+        &:hover {
+            color: $tertiary-color-bright;
+        }
+    }
     font-family: "Roboto Condensed";
     >#header {
         nav {
@@ -106,7 +111,21 @@ div.two-column, div.three-column {
                 font-family: "Ubuntu Mono";
                 color: $accent-color;
                 line-height: 15px;
-                a {
+                &:nth-child(even) {
+                    a {
+                        color: $accent-color;
+                        &:hover {
+                            color: $tertiary-color;
+                        }
+                    }
+                }
+                &:nth-child(odd) {
+                    a {
+                        color: $accent-color-bright;
+                        &:hover {
+                            color: $tertiary-color;
+                        }
+                    }
                 }
                 time {
                     background-color: $secondary-color-bright;
