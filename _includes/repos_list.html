@@ -1,6 +1,6 @@
 <h4>Repos</h4>
 <ul>
-    {% for repository in site.github.public_repositories %}
+    {% for repository in site.github.public_repositories | sort: 'date') | reverse %}
         <li>
             <a href="{{ repository.html_url }}">{{ repository.name }}</a>
         </li>
