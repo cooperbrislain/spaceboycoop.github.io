@@ -2,7 +2,7 @@
 layout: post
 title: "Soldering Hack: Staggering Splices"
 short_title: "Soldering Hack"
-date:   2018-02-08 10:05:32 -0800
+date:   2018-02-08
 categories: new site welcome
 ---
 ![]({{ "/assets/img/soldering_hack.jpg" }})

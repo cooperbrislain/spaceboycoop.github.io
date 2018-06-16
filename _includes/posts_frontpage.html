@@ -1,5 +1,7 @@
 <ul>
-    {% for post in site.posts %}
+    {% assign posts_sorted = site.posts | sort: 'date' %}
+    {% assign posts_sorted = posts_sorted | reverse %}
+    {% for post in posts_sorted %}
         <li>
             <article>
                 <header>

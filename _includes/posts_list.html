@@ -1,6 +1,8 @@
 <h4>Posts</h4>
 <ul>
-    {% for post in site.posts %}
+    {% assign posts_sorted = site.posts | sort: 'date' %}
+    {% assign posts_sorted = posts_sorted | reverse %}
+    {% for post in posts_sorted %}
     <li>
         {% include time_block.html date=post.date %}
         {% if post.short_title %}
