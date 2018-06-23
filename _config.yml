@@ -42,6 +42,7 @@ twitter:            spaceboycoop
 facebook:           spaceboycoop
 instagram:          spaceboycoop
 github:             spaceboycoop
+vimeo:              spaceboycoop
 
 # personal
 location:           Oakland, CA
@@ -66,4 +67,4 @@ jekyll-mentions:
     base_url: https://github.com
 
 # Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, .gitignore, .git, .idea, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
